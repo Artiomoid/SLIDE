@@ -17,9 +17,8 @@ public class Dissolve : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-      
-         playerMaterial.SetFloat("Vector1_b3c4e15c8ef445bd90c09ad6e9482121", MixValue);
+    {   
+         playerMaterial.SetFloat(PropertyName, MixValue);
     }
 
     // Update is called once per frame
@@ -30,7 +29,7 @@ public class Dissolve : MonoBehaviour
         if(MixValue > minDissolve)
 {
    MixValue -= dissolveSpeed;
-    playerMaterial.SetFloat("Vector1_b3c4e15c8ef445bd90c09ad6e9482121", MixValue);
+    playerMaterial.SetFloat(PropertyName, MixValue);
     Debug.Log(MixValue);
 }
 

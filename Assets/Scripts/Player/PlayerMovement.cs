@@ -20,10 +20,16 @@ public class PlayerMovement : MonoBehaviour {
     public FollowPlayer follow;
     public PlayerManager playerManager;
     public SpeedLight speedD;
+    public bool active = false;
 
     void Start() {
   colli = GetComponent<PlayerCollision>();
+  Invoke("Active",2);
    
+    }
+
+    void Active(){
+        active = true;
     }
     
  
@@ -32,6 +38,10 @@ public class PlayerMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
+
+       if(!active)
+       return;
+
        rb.AddForce(0, 0, forwardSpeed * Time.deltaTime);
 
         if (moveLeft)
@@ -49,6 +59,9 @@ public class PlayerMovement : MonoBehaviour {
     }
  void Update()
     {
+
+          if(!active)
+       return;
      
        
         
@@ -147,7 +160,7 @@ public class PlayerMovement : MonoBehaviour {
    
      rb.AddForce(new Vector3(0, 1350* Time.deltaTime ,30-spaceAdjustment),ForceMode.Impulse);
       
-      if(forwardSpeed <= 3280){
+      if(forwardSpeed <= 3360){
 
       forwardSpeed += 80;
       spaceAdjustment +=  forwardSpeed * 0.0015f;

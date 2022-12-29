@@ -63,10 +63,12 @@ if (Input.GetKeyDown("f")){
 
 
     public void JumpCam(float current){
+      if(current != 76f)
          StartCoroutine( ChangeFOV( current, 76.0f, 0.5f ) );
     }
 
     public void ReverseCam(float current){
+      if(current != 60f)
           StartCoroutine( ChangeFOV( current, 60.0f, 0.5f ) );
     } 
     

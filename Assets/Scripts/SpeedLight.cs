@@ -11,7 +11,7 @@ public class SpeedLight : MonoBehaviour
    
     public void LightEffect(){
      
-     if(distance < 1.1f){
+     if(distance < 1.4f){
         distance += 0.1f;
      }
      transform.localPosition = new Vector3(0.08f,0.2f,distance);

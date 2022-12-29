@@ -51,10 +51,12 @@ public class MenuManager : MonoBehaviour
     {
         playerNameInputfield.enabled = false;
         Debug.Log("Recived Named");
+          playerId.text = "Player:" + playerNameInputfield; 
     } else
     {
           playerNameInputfield.enabled = true;
           Debug.Log("Could not retrieve player name");
+           playerId.text = "Player:" + PlayerPrefs.GetString("PlayerID"); 
     }
 });
 
@@ -67,7 +69,7 @@ public class MenuManager : MonoBehaviour
                 Debug.Log("Player was logged in");
                 PlayerPrefs.SetString("PlayerID", response.player_id.ToString());
                 Debug.Log("Player ID:"+ PlayerPrefs.GetString("PlayerID"));
-                playerId.text = "Player ID:" + PlayerPrefs.GetString("PlayerID"); 
+
                 done = true;
             }
             else
