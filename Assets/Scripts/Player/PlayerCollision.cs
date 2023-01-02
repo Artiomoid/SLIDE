@@ -56,7 +56,7 @@ public class PlayerCollision : MonoBehaviour
             if (!hasExploded)
             {
                   
-                  StartCoroutine(playerManager.PlayerDied((int)movement.transform.position.z));   
+                  StartCoroutine(playerManager.PlayerDied((int)movement.score));   
                   Explode();                     
                 
                   hasExploded = true;
@@ -92,8 +92,25 @@ public class PlayerCollision : MonoBehaviour
             groundGenerator.Generate();
             backgroundGenerator.GenerateCube();
           }
+          if(other.gameObject.tag == "Goal")
+          {
+            
+            UpdateScore(movement.score, movement.score += 100f, 0.5f);
+          }
 
     }
+
+    IEnumerator UpdateScore(float v_start, float v_end, float duration )
+   {
+     float elapsed = 0.0f;
+     while (elapsed < duration )
+     {
+      movement.score = Mathf.Lerp( v_start, v_end, elapsed / duration );
+       elapsed += Time.deltaTime;
+       yield return null;
+     }
+    
+   }
 
     
     public void Explode()

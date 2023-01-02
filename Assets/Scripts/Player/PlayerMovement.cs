@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour {
     public PlayerManager playerManager;
     public SpeedLight speedD;
     public bool active = false;
+    public float score;
 
     void Start() {
   colli = GetComponent<PlayerCollision>();
@@ -76,7 +77,7 @@ public class PlayerMovement : MonoBehaviour {
 
         if (rb.position.y < 0)
         {
-            StartCoroutine(playerManager.PlayerDied((int)transform.position.z));
+            StartCoroutine(playerManager.PlayerDied((int)score));
         }
       
 
