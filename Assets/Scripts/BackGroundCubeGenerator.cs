@@ -8,7 +8,7 @@ public class BackGroundCubeGenerator : MonoBehaviour
 
     [SerializeField]public Transform Rotate;
 
-    public int SpaceDistance = 1520;
+    public int SpaceDistance = 200;
     public GroundGenerator Ground;
 
 
@@ -27,7 +27,7 @@ public class BackGroundCubeGenerator : MonoBehaviour
    
    public void GenerateCube(){
 
-    Instantiate(Rotate,new Vector3(0,0, (100*Ground.i)+100+(Ground.i*60) + SpaceDistance),Quaternion.identity);
+    Instantiate(Rotate,new Vector3(0,0, (300*Ground.i)+300+(Ground.i*100) + SpaceDistance),Quaternion.identity);
     SpaceDistance += 200;
     
    }
