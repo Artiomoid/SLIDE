@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
     public GameObject fadeInPanel;
     public GameObject youWonPanel;
     public GameObject StopPanel;
-   
+   public GameObject endPanel;
     public Text score;
     public bool paused;
     
@@ -38,15 +38,15 @@ public class GameManager : MonoBehaviour {
                 paused = true;
                  Time.timeScale = 0;
             }
-            else
-            {
-                StopPanel.SetActive(false);
-                paused = false;
-                Time.timeScale = 1; // unpause
-
-            }
+           
         }
 
+    }
+
+    public void Resume(){
+ StopPanel.SetActive(false);
+                paused = false;
+                Time.timeScale = 1; // unpause
     }
 
 
@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour {
         FindObjectOfType<PlayerMovement>().enabled = false; // stop movement of player
         FindObjectOfType<Camera>().backgroundColor = gameOverColor; // turn background to red
         RenderSettings.fogColor = gameOverColor; // turn fog to red
-        StopPanel.SetActive(true);
+        endPanel.SetActive(true);
         Time.timeScale = 0;
          
        
