@@ -51,7 +51,7 @@ public class MenuManager : MonoBehaviour
     {
         playerNameInputfield.enabled = false;
         Debug.Log("Recived Named");
-          playerId.text = "Player:" + playerNameInputfield; 
+          playerId.text = "Player:" + playerNameInputfield.text; 
     } else
     {
           playerNameInputfield.enabled = true;

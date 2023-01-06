@@ -104,7 +104,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_FFDCFF4B: {r: 7.2017345, g: 4.388433, b: 0.37367496, a: 0}
+    - Color_FFDCFF4B: {r: 4.5412054, g: 2.7817855, b: 0.2615354, a: 0}
     - _BaseColor: {r: 0.98647726, g: 1, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 6.4222345, g: 3.4296749, b: 0, a: 1}

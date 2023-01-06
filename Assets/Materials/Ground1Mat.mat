@@ -99,8 +99,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_58B7EEDD: 1
-    - Vector1_86216A01: 1
-    - Vector1_A6A77446: 1
+    - Vector1_86216A01: 6
+    - Vector1_A6A77446: 0.1
     - Vector1_b3c4e15c8ef445bd90c09ad6e9482121: -1.0199988
     - _AlphaClip: 0
     - _Blend: 0
@@ -134,9 +134,9 @@ Material:
     m_Colors:
     - Color_45b2521037dc494ea5638b15fd7622b2: {r: 0.07924521, g: 0.9534726, b: 1,
         a: 0}
-    - Color_5FBE2EF7: {r: 0, g: 1.531598, b: 3.4415908, a: 0}
-    - Color_7C16A9AD: {r: 0.015686274, g: 0.56199807, b: 1, a: 0}
-    - Vector4_6372457F: {r: 0, g: 0.1, b: 0.8, a: 4}
+    - Color_5FBE2EF7: {r: 0.59177047, g: 3.3765726, b: 6.648715, a: 0}
+    - Color_7C16A9AD: {r: 0, g: 0.2901961, b: 0.5294118, a: 0}
+    - Vector4_6372457F: {r: 0, g: 0.4, b: 1.03, a: 6}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _CurvedWorldBendSettings: {r: 2, g: 1, b: 0, a: 0}

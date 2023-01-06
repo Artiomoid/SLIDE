@@ -21,13 +21,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ObstaclesMat
-  m_Shader: {fileID: -6465566751694194690, guid: b2256b07d48d13849abaab82067c579a,
+  m_Shader: {fileID: -6465566751694194690, guid: 95fb0d710df9e0a4c8e002810f37aec6,
     type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 2
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 5000
   stringTagMap: {}
   disabledShaderPasses:
   - DepthOnly
@@ -130,6 +130,7 @@ Material:
     m_Colors:
     - Color_5FBE2EF7: {r: 2.1422598, g: 0.17593439, b: 0.17593439, a: 0}
     - Color_7C16A9AD: {r: 0.6509434, g: 0.12588999, b: 0.12588999, a: 0}
+    - Color_FFDCFF4B: {r: 6.498019, g: 0, b: 0, a: 0}
     - Vector4_6372457F: {r: 0, g: 0.25, b: 2, a: 2}
     - _BaseColor: {r: 0.4056604, g: 0, b: 0, a: 1}
     - _Color: {r: 0.4056604, g: 0, b: 0, a: 1}
