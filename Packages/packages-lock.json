@@ -13,20 +13,21 @@
       "dependencies": {}
     },
     "com.unity.adaptiveperformance": {
-      "version": "2.1.1",
+      "version": "4.0.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.subsystemregistration": "1.1.0"
+        "com.unity.subsystemregistration": "1.1.0",
+        "com.unity.profiling.core": "1.0.2"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.adaptiveperformance.samsung.android": {
-      "version": "2.1.1",
+      "version": "4.0.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.adaptiveperformance": "2.1.1"
+        "com.unity.adaptiveperformance": "4.0.1"
       },
       "url": "https://packages.unity.com"
     },
@@ -45,6 +46,15 @@
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.burst": {
+      "version": "1.8.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.mathematics": "1.2.1"
       },
       "url": "https://packages.unity.com"
     },
@@ -107,7 +117,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.mathematics": {
-      "version": "1.1.0",
+      "version": "1.2.6",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -140,6 +150,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.profiling.core": {
+      "version": "1.0.2",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.progrids": {
       "version": "3.0.3-preview.6",
       "depth": 0,
@@ -165,34 +182,35 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
-      "version": "10.4.0",
+      "version": "12.1.8",
       "depth": 1,
-      "source": "registry",
+      "source": "builtin",
       "dependencies": {
-        "com.unity.ugui": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.physics": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      }
     },
     "com.unity.render-pipelines.universal": {
-      "version": "10.4.0",
+      "version": "12.1.8",
       "depth": 0,
-      "source": "registry",
+      "source": "builtin",
       "dependencies": {
-        "com.unity.mathematics": "1.1.0",
-        "com.unity.render-pipelines.core": "10.4.0",
-        "com.unity.shadergraph": "10.4.0"
-      },
-      "url": "https://packages.unity.com"
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.burst": "1.8.2",
+        "com.unity.render-pipelines.core": "12.1.8",
+        "com.unity.shadergraph": "12.1.8"
+      }
     },
     "com.unity.searcher": {
-      "version": "4.3.1",
+      "version": "4.9.1",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.services.analytics": {
-      "version": "4.0.1",
+      "version": "4.2.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -202,8 +220,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
-      "version": "1.4.0",
-      "depth": 2,
+      "version": "1.6.0",
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.unitywebrequest": "1.0.0",
@@ -220,14 +238,13 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.shadergraph": {
-      "version": "10.4.0",
+      "version": "12.1.8",
       "depth": 1,
-      "source": "registry",
+      "source": "builtin",
       "dependencies": {
-        "com.unity.render-pipelines.core": "10.4.0",
-        "com.unity.searcher": "4.3.1"
-      },
-      "url": "https://packages.unity.com"
+        "com.unity.render-pipelines.core": "12.1.8",
+        "com.unity.searcher": "4.9.1"
+      }
     },
     "com.unity.subsystemregistration": {
       "version": "1.1.0",
@@ -280,14 +297,13 @@
       }
     },
     "com.unity.visualeffectgraph": {
-      "version": "10.4.0",
+      "version": "12.1.8",
       "depth": 0,
-      "source": "registry",
+      "source": "builtin",
       "dependencies": {
-        "com.unity.shadergraph": "10.4.0",
-        "com.unity.render-pipelines.core": "10.4.0"
-      },
-      "url": "https://packages.unity.com"
+        "com.unity.shadergraph": "12.1.8",
+        "com.unity.render-pipelines.core": "12.1.8"
+      }
     },
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.10",
