@@ -15,7 +15,7 @@ public class VisualizerScript : MonoBehaviour {
 	public int visualizerSimples = 64;
 
 	VisualizerObjectScript[] visualizerObjects;
-	AudioSource audioSource;
+	public AudioSource audioSource;
 	
 
 	// Use this for initialization

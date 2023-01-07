@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
    public GameObject endPanel;
     public Text score;
     public bool paused;
+    public VisualizerScript audio;
     
 
     public void Start()
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour {
         {
             if (Time.timeScale != 0)
             {
+                audio.audioSource.Pause();
                 StopPanel.SetActive(true);
                 paused = true;
                  Time.timeScale = 0;
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour {
  StopPanel.SetActive(false);
                 paused = false;
                 Time.timeScale = 1; // unpause
+                 audio.audioSource.Play();
     }
 
 
@@ -64,6 +67,7 @@ public class GameManager : MonoBehaviour {
 
     public void StopGame()
     {
+         audio.audioSource.Pause();
         Debug.Log("Called");
         FindObjectOfType<PlayerMovement>().enabled = false; // stop movement of player
         FindObjectOfType<Camera>().backgroundColor = gameOverColor; // turn background to red

@@ -248,6 +248,7 @@ MonoBehaviour:
   endPanel: {fileID: 304081593}
   score: {fileID: 752970641}
   paused: 0
+  audio: {fileID: 1421256624}
 --- !u!4 &162082873
 Transform:
   m_ObjectHideFlags: 0
@@ -2252,7 +2253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961684930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17, y: -2, z: 29.499998}
+  m_LocalPosition: {x: -17, y: -2, z: 46.4}
   m_LocalScale: {x: 2, y: 27, z: 65}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3500,6 +3501,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1029972040}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1421256624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2826401862610957509, guid: 73006e5779da241d3b76602c454becac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1029972040}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566c96e6e7fac6e4cb70d4ae27baabf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1566198781
 GameObject:
   m_ObjectHideFlags: 0
@@ -3985,7 +3998,7 @@ MonoBehaviour:
   sidewaySpeed: 0.85
   spaceAdjustment: 0
   groundGenerator: {fileID: 496635103}
-  sideforce: 87
+  sideforce: 85
   colli: {fileID: 1764462651}
   trail: {fileID: 0}
   cam: {fileID: 961330625}
@@ -4605,7 +4618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7011603997172871942}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17, y: -2, z: 29.5}
+  m_LocalPosition: {x: 17, y: -2, z: 46.4}
   m_LocalScale: {x: 2, y: 27, z: 65}
   m_ConstrainProportionsScale: 0
   m_Children: []

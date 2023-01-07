@@ -15,7 +15,7 @@ MonoBehaviour:
   version: 5
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23,7 +23,8 @@ Material:
   m_Name: SMALL GROUND
   m_Shader: {fileID: -6465566751694194690, guid: b2256b07d48d13849abaab82067c579a,
     type: 3}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
@@ -97,6 +98,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - Vector1_58B7EEDD: 1
     - Vector1_86216A01: 6
@@ -121,6 +123,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Smoothness: 0
@@ -134,9 +137,9 @@ Material:
     m_Colors:
     - Color_45b2521037dc494ea5638b15fd7622b2: {r: 0.07924521, g: 0.9534726, b: 1,
         a: 0}
-    - Color_5FBE2EF7: {r: 0.59177047, g: 3.3765726, b: 6.648715, a: 0}
-    - Color_7C16A9AD: {r: 0, g: 0.2901961, b: 0.5294118, a: 0}
-    - Vector4_6372457F: {r: 0, g: 0.57, b: 1.17, a: 6.85}
+    - Color_5FBE2EF7: {r: 0, g: 5.069819, b: 4.2735124, a: 0}
+    - Color_7C16A9AD: {r: 0, g: 0.023529412, b: 0.1254902, a: 0}
+    - Vector4_6372457F: {r: 0, g: 0.57, b: 1.17, a: 3.33}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _CurvedWorldBendSettings: {r: 2, g: 1, b: 0, a: 0}
